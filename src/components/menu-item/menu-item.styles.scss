@@ -1,14 +1,12 @@
 .menu-item {
   min-width: 30%;
-  height: 18rem;
+  height: 240px;
   flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid black;
-  margin: 0 0.5rem 1rem;
-  background-position: center;
-  background-size: cover;
+  margin: 0 7.5px 15px;
   overflow: hidden;
 
   &:hover {
@@ -16,7 +14,7 @@
 
     & .background-image {
       transform: scale(1.1);
-      transition: transform 6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
 
     & .content {
@@ -25,24 +23,27 @@
   }
 
   &.large {
-    height: 27rem;
+    height: 380px;
   }
+
   &:first-child {
-    margin-right: 0.5rem;
+    margin-right: 7.5px;
   }
 
   &:last-child {
-    margin-left: 0.5rem;
+    margin-left: 7.5px;
   }
 
   .background-image {
-    height: 100%;
     width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
   }
 
   .content {
-    height: 5.6rem;
-    padding: 0 1.6rem;
+    height: 90px;
+    padding: 0 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,14 +55,14 @@
 
     .title {
       font-weight: bold;
-      margin-bottom: 0.4rem;
-      font-size: 1.4rem;
+      margin: 0 6px 0;
+      font-size: 22px;
       color: #4a4a4a;
     }
 
     .subtitle {
       font-weight: lighter;
-      font-size: 1rem;
+      font-size: 16px;
     }
   }
 }
